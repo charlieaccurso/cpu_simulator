@@ -1,0 +1,25 @@
+Building a CPU simulator in Python is a fascinating project that will help you understand the fundamental workings of a computer's central processing unit (CPU). Here are the main components you'll need to implement in your CPU simulator:
+
+Memory: Create a memory component to store instructions and data. Memory is an essential part of any CPU, and it's where the CPU fetches and stores data and instructions. DONE
+
+Registers: Implement CPU registers, which are small, fast storage locations directly accessible by the CPU. Common registers include the program counter (PC), instruction register (IR), and general-purpose registers (e.g., AX, BX, CX, DX). DONE
+
+Instruction Set: Define an instruction set for your CPU. This set of instructions represents the operations the CPU can perform, such as arithmetic, logic, and data movement instructions. DONE
+
+Decoder: Build an instruction decoder that takes the fetched instruction (binary code) and interprets it, determining the operation to be performed and the operands involved. DONE
+
+ALU (Arithmetic Logic Unit): The ALU is responsible for executing arithmetic and logic operations, such as addition, subtraction, AND, OR, etc. DONE INDIRECTLY VIA REGULAR PYTHON OPERATORS
+
+Control Unit: Create a control unit that manages the flow of data and instructions within the CPU. It sends control signals to various components (e.g., ALU, registers) to coordinate the execution of instructions. DONE
+
+Clock: Implement a clock to synchronize the various components and ensure they operate in a coordinated manner. The clock generates regular pulses, and the CPU performs operations based on these pulses. DONE
+
+Fetch-Decode-Execute Cycle: The core loop of the CPU simulator should follow the Fetch-Decode-Execute cycle, where it fetches an instruction from memory, decodes it, and then executes it. DONE
+
+Program Loader: Design a program loader to load machine code (binary representation of instructions) into the memory so that the CPU can execute it. DONE
+
+Input/Output Simulation (optional): Depending on the complexity of your CPU simulator, you might want to simulate I/O operations as well. This could include handling input/output instructions and interacting with devices. 
+
+Interrupt Handling (optional): For a more advanced CPU simulator, you can implement interrupt handling mechanisms. Interrupts are events that can pause the CPU's normal execution to handle urgent tasks.
+
+Remember that building a complete CPU simulator can be a complex task, especially if you want to make it accurate and efficient. Start with a simple design and gradually add more features and complexity as you progress. It's also helpful to refer to CPU architecture documentation and textbooks to understand the real-world CPU design principles. Happy coding!
